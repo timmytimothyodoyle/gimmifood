@@ -12,7 +12,8 @@ public class AddIngredienteServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-
+		System.out.println("yoquese");
+		System.out.println(request.getParameter("action"));
 	}
 
 }
