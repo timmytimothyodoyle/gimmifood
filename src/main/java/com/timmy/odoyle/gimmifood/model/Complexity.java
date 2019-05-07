@@ -1,6 +1,6 @@
 package com.timmy.odoyle.gimmifood.model;
 
-public enum Dificultad {
+public enum Complexity {
 	RETARD,
 	MAIA,
 	FACIL,

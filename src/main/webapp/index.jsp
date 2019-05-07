@@ -22,44 +22,44 @@
 		<div class="row">
 			<div class="col l9">
 				<p>Seleccione ingredientes</p>
+				
+				<div class="input-field col l3">
+					<select class="category-select">
+						<option value="" disabled selected>Choose your option</option>
+						<option value="carnes">Carnes</option>
+						<option value="vegetales">Vegetales</option>
+						<option value="frutas">Frutas</option>
+						<option value="pescados">Pescados</option>
+						<option value="bebidas">Bebidas</option>
+					</select> <label>Categoria</label>
+				</div>
+								
 				<div class="input-field col l9">
 					<input placeholder="e.x Bife de Chorizo" id="search_field"
-						type="text" class="validate"> <label for="search_field">Search
-						by term</label>
+						type="text" class="validate"> 
+					<label for="search_field">Buscar por termino</label>
 				</div>
 
-				<div class="input-field col l3">
-					<select>
-						<option value="" disabled selected>Choose your option</option>
-						<option value="1">Meats</option>
-						<option value="2">Vegetables</option>
-						<option value="3">Fruits</option>
-						<option value="4">Pasta</option>
-					</select> <label>Category</label>
-				</div>
-
-				<div class="col s12">
-					<div class="chip">
-						<i class="material-icons">add</i> Jane Doe
-					</div>
-					<div class="chip">Patas de pollo</div>
-					<div class="chip">Alas de pollo</div>
+				<div class="col s12 chip-select">
 				</div>
 			</div>
 
 			<div class="col l3">
 				<p>Ingredientes seleccionados</p>
 
-				<div class="col s12">
-					<div class="chip">Papas</div>
-					<div class="chip">Tomate</div>
+				<div class="col s12 chip-selected">
+					<div class="chip" data-id="lapapa">Papas<i class="close material-icons">close</i></div>
+					<div class="chip" data-id="lacebolla">Cebolla<i class="close material-icons">close</i></div>
 				</div>
-			</div>
-		</div>
+				
+				<div>
+					<button class="btn waves-effect waves-light center-align cook-recipes" type="submit"
+						name="action">
+						Cook <i class="material-icons right">send</i>
+					</button>
+				</div>
 
-		<div class="row">
-			<a class="waves-effect waves-light btn-large ingrediente"><i
-				class="material-icons left">cloud</i>Food!</a>
+			</div>
 		</div>
 	</div>
 </body>

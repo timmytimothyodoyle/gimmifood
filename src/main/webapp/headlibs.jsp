@@ -1,6 +1,8 @@
 <!-- Import 3th party libraries -->
 <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection"/>
 
+<link type="text/css" rel="stylesheet" href="/css/index.css" media="screen,projection"/>
+
 <!--Import Google Icon Font-->
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
