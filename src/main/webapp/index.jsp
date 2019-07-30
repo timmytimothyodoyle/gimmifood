@@ -12,7 +12,7 @@
 		<blockquote>No se como corno usar materializeeeee.</blockquote>
 
 		<div class="row section">
-			<div class="col s6  indigo lighten-3">
+			<div class="col s6  teal lighten-5">
 				<div class="row">
 					<div class="input-field col s12">
 						<select>
@@ -24,9 +24,41 @@
 						<button class="btn">+</button>
 					</div>
 				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">search</i> <input type="text"
+							id="autocomplete-input" class="autocomplete"> <label
+							for="autocomplete-input">Buscar</label>
+					</div>
+				</div>
+			</div>
+			<div class="col s6 purple lighten-5">
+				<p>INGREDIENTES DISPONIBLES</p>
+			
+					<table>
+						<thead>
+							<tr>
+								<th>Qué</th>
+								<th>Cuánto</th>
+							</tr>
+						</thead>
+
+						<tbody>
+					
+
+						</tbody>
+					</table>
+
+				</div>
 			</div>
 		</div>
-	</div>
+
+
+
+
+
+
+
 </body>
 
 <jsp:include page="footerlibs.jsp" />
