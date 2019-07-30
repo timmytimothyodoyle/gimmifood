@@ -5,7 +5,7 @@
 </head>
 
 <body>
-	<h2>Maya Sucks!</h2>
+	<h2>Seba Sucks!</h2>
 </body>
 
 <jsp:include page="footerlibs.jsp" />
