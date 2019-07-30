@@ -21,18 +21,12 @@
 							<option value="2">Option 2</option>
 							<option value="3">Option 3</option>
 						</select> <label>Dificultad</label>
-						<button class="btn">
-					+
-					</button>
+						<button class="btn">+</button>
 					</div>
-					
-					
-			
 				</div>
+			</div>
+		</div>
 	</div>
-
-
-
 </body>
 
 <jsp:include page="footerlibs.jsp" />
