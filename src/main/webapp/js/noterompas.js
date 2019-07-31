@@ -17,7 +17,7 @@
       cel1.innerHTML = texto;
      cel2.innerHTML = '1.0';
       }
-      //no me saleeeeeeeeeeeeeeeeeeeeeeeeeeeee
+
     });
   });
   

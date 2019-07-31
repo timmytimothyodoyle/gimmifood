@@ -21,37 +21,47 @@
 							<option value="2">Option 2</option>
 							<option value="3">Option 3</option>
 						</select> <label>Dificultad</label>
-						<button class="btn">+</button>
+						
 					</div>
 				</div>
 				<div class="row">
-					<div class="input-field col s12">
+					<div class="input-field col s6">
 						<i class="material-icons prefix">search</i> <input type="text"
 							id="autocomplete-input" class="autocomplete"> <label
 							for="autocomplete-input">Buscar</label>
 					</div>
+					<div class="input-field col s3">
+						<input placeholder="Cantidad" id="cantidad_form" type="number"
+							class="validate"> <label for="cantidad_form">Cantidad</label>
+					</div>
+					<div class="col s1">
+					<button class="btn">+</button>
+						</div>
 				</div>
+				
 			</div>
-			<div class="col s6 purple lighten-5">
-				<p>INGREDIENTES DISPONIBLES</p>
-			
-					<table>
-						<thead>
-							<tr>
-								<th>Qué</th>
-								<th>Cuánto</th>
-							</tr>
-						</thead>
+	
+		
+		<div class="col s6 purple lighten-5">
+			<p>INGREDIENTES DISPONIBLES</p>
 
-						<tbody>
-					
+			<table>
+				<thead>
+					<tr>
+						<th>Qué</th>
+						<th>Cuánto</th>
+					</tr>
+				</thead>
 
-						</tbody>
-					</table>
+				<tbody>
 
-				</div>
-			</div>
+
+				</tbody>
+			</table>
+
 		</div>
+	</div>
+	</div>
 
 
 
