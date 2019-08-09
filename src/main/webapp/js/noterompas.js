@@ -2,6 +2,14 @@ function notify(message) {
 	M.toast(message, 4000);
 };
 
+function toAutocompleteMap(elements) {
+	var data = {};
+	for (var i = 0; i < elements.length; i++) {
+		data[elements[i]] = null;
+	}
+	return data;
+};
+
 function getAutocomplete() {
 	var geturl = '/getingredients';
 	return $.ajax({
@@ -16,7 +24,7 @@ function getAutocomplete() {
 document.addEventListener('DOMContentLoaded', function() {
 	
 	$.when(getAutocomplete()).done(function(data) {
-		console.log(data);
+		console.log(toAutocompleteMap(data));
 		var options = { data : {
 			"Uno" : null,
 			"Dos" : null,
