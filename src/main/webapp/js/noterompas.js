@@ -1,21 +1,29 @@
- document.addEventListener('DOMContentLoaded', function() {
-	  var options = {
-	  	data: {
-		  "Pan": null,
-		  "Harina": null,
-		  "Caca": null
-		  	},
-		  	
-	  onAutocomplete: function(texto){
-	  ingredientes.innerHTML += `<div class="chip">
-			${texto} <i class="close material-icons">close</i>
-		</div>`	
-	  }	 	
-	  }
-	var elems = document.querySelectorAll('.autocomplete');
-    var instances = M.Autocomplete.init(elems, options);
-  });
-  
-  var ingredientes = document.querySelector("#selected-ingredients");
-  
-  
+function notify(message) {
+	M.toast(message, 4000);
+};
+
+function getAutocomplete() {
+	var geturl = '/getingredients';
+	return $.ajax({
+		url : geturl,
+		type : 'GET',
+		error : function(data) {
+			notify('algo fallo');
+		}
+	});
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+	
+	$.when(getAutocomplete()).done(function(data) {
+		console.log(data);
+		var options = { data : {
+			"Uno" : null,
+			"Dos" : null,
+			"Tres": null,
+			"Cuatro": null
+		} };
+		var elems = document.querySelectorAll('.autocomplete');
+		M.Autocomplete.init(elems, options);
+	});
+});

@@ -13,6 +13,6 @@ public class Receta {
 
 	private List<Instruccion> instrucciones;
 
-	private Map<Ingrediente, String> ingredientes;
+	private Map<Ingredient, String> ingredientes;
 
 }
