@@ -7,7 +7,7 @@
 			una serpiente que se deslizó hasta su domicilio y lo atacó.</p>
 	</div>
 	<div class="input-field col s12">
-		<input id="search" type="text" class="validate"> <label
+		<input id="autocomplete-input" type="text" class="autocomplete"> <label
 			for="search">Search ingredients you have</label>
 	</div>
 
