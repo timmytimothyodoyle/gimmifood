@@ -5,10 +5,13 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container-fluid">
+		<jsp:include page="/components/navbar.jsp" />
+		<div class="container">
 		<jsp:include page="/components/ingredients.jsp" />
 
 		<jsp:include page="/components/receipts.jsp" />
+		</div>
 	</div>
 </body>
 
