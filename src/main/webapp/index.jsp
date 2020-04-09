@@ -7,7 +7,7 @@
 <body>
 
 <div class="container">
-<a class="waves-effect waves-light btn">Añadir ingrediente</a>
+<a class="waves-effect waves-light btn">Aï¿½adir ingrediente</a>
 
      <div class="collection">
         <a href="#!" class="collection-item">Alvin</a>
@@ -15,6 +15,13 @@
         <a href="#!" class="collection-item">Alvin</a>
         <a href="#!" class="collection-item">Alvin</a>
       </div>
+	<div class="container-fluid">
+		<jsp:include page="/components/navbar.jsp" />
+		<div class="container">
+		<jsp:include page="/components/ingredients.jsp" />
+
+		<jsp:include page="/components/receipts.jsp" />
+		</div>
 	</div>
 </body>
 

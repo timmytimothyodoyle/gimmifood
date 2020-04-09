@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+	<!--  servlet declarations -->
+  <servlet>
+		<servlet-name>GetIngredientsServlet</servlet-name>
+		<servlet-class>com.timmy.odoyle.gimmifood.servlet.GetIngredientsServlet</servlet-class>
+	</servlet>
+	<!-- servlet mapping declarations -->
+	<servlet-mapping>
+		<servlet-name>GetIngredientsServlet</servlet-name>
+		<url-pattern>/getingredients</url-pattern>
+	</servlet-mapping>
 </web-app>
