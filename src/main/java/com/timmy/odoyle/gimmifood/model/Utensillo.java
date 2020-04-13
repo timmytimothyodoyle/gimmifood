@@ -2,12 +2,20 @@ package com.timmy.odoyle.gimmifood.model;
 
 import java.util.Map;
 
-public class Utensillo {
+public class Utensillo extends DefaultFood {
 
-	private String id;
 
-	private String nombre;
+	public Utensillo(String id, String name) {
+		super(id, name);
+		
+	}
 
-	private Map<String, String> metadata;
+	public String getId() {
+		return this.id;
+	}
+
+	public String getName() {
+		return this.name;
+	}
 
 }

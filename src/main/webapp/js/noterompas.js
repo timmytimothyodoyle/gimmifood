@@ -26,12 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
 	$.when(getAutocomplete()).done(function(data) {
 		console.log(toAutocompleteMap(data));
 		var options = { data : {
-			"Uno" : null,
-			"Dos" : null,
-			"Tres": null,
-			"Cuatro": null
+
+			"Pan" : null,
+			"Tomate" : null,
+			"Cebolla": null,
+			"Jamon": null
 		} };
 		var elems = document.querySelectorAll('.autocomplete');
 		M.Autocomplete.init(elems, options);
 	});
 });
+
+document.querySelector("#js_search").addEventListener("click", agregarIngrediente(document.querySelector("#autocomplete-input").value);
+
+
+

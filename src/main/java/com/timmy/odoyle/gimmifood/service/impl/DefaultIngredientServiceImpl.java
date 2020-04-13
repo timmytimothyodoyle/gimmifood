@@ -12,11 +12,7 @@ public class DefaultIngredientServiceImpl implements IngredientService {
 	private Map<String, Ingredient> ingredients;
 	
 	public DefaultIngredientServiceImpl() {
-		ingredients = new HashMap<String, Ingredient>();
-		ingredients.put("Uno", new Ingredient("Uno"));
-		ingredients.put("Dos", new Ingredient("Dos"));
-		ingredients.put("Tres", new Ingredient("Tres"));
-		ingredients.put("Cuatro", new Ingredient("Cuatro"));
+	
 	}
 
 	public void add(Ingredient ingrediente) {

@@ -31,11 +31,11 @@ public class GetIngredientsServlet extends HttpServlet {
 			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 			return;
 		}
-		// adapt collection of ingredients to json object
+/*		// adapt collection of ingredients to json object
 		JsonArray autocomplete = new IngredientJsonAdapter().adapt(ingredients);
 		// set the response
 		response.setContentType("application/json");
 		response.setStatus(HttpServletResponse.SC_OK);
-		response.getWriter().write(autocomplete.toString());
+		response.getWriter().write(autocomplete.toString());*/
 	}
 }

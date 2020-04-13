@@ -1,25 +1,12 @@
 package com.timmy.odoyle.gimmifood.model;
 
-public class Ingredient {
-
-	private String id;
-
-	private String name;
+public class Ingredient extends DefaultFood {
 
 	private Categoria category;
-	
-	public Ingredient(String name) {
-		this.id = "yoquese";
-		this.name = name;
-		this.category = Categoria.PESCADO;
-	}
 
-	public String getId() {
-		return id;
-	}
-
-	public String getName() {
-		return name;
+	public Ingredient(String id, String name, Categoria category) {
+		super(id, name);
+		this.category = category;
 	}
 
 	public Categoria getCategory() {
