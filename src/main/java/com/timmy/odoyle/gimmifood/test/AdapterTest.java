@@ -14,7 +14,7 @@ public class AdapterTest {
 		Receta receta = new Receta("1", "Pastel de papa", Difficulty.FACIL);
 		Ingredient papa = new Ingredient("1", "papa", Categoria.TUBERCULOS);
 		Ingredient carne_picada = new Ingredient("2", "carne_picada", Categoria.CARNE);
-		Ingredient queso = new Ingredient("3", "queso", Categoria.LACTEOS);
+		Ingredient queso = new Ingredient("3", "queso", Categoria.LACTEO);
 		receta.addIngrent(papa);
 		receta.addIngrent(carne_picada);
 		receta.addIngrent(queso);
