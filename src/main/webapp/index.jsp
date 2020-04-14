@@ -6,15 +6,6 @@
 
 <body>
 
-<div class="container">
-<a class="waves-effect waves-light btn">A�adir ingrediente</a>
-
-     <div class="collection">
-        <a href="#!" class="collection-item">Alvin</a>
-        <a href="#!" class="collection-item active">Alvin</a>
-        <a href="#!" class="collection-item">Alvin</a>
-        <a href="#!" class="collection-item">Alvin</a>
-      </div>
 	<div class="container-fluid">
 		<jsp:include page="/components/navbar.jsp" />
 		<div class="container">
