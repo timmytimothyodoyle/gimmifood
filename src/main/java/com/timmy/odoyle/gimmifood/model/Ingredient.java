@@ -1,15 +1,12 @@
 package com.timmy.odoyle.gimmifood.model;
 
-public class Ingredient extends DefaultFood {
+import com.timmy.odoyle.gimmifood.model.material.Food;
 
-	private Categoria category;
+public class Ingredient {
 
-	public Ingredient(String id, String name, Categoria category) {
-		super(id, name);
-		this.category = category;
-	}
-
-	public Categoria getCategory() {
-		return category;
-	}
+	private Food raw;
+	
+	private Unit unit;
+	
+	private Double amount;
 }

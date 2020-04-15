@@ -1,6 +1,6 @@
 package com.timmy.odoyle.gimmifood.model;
 
-public enum Categoria {
+public enum Category {
 	VERDURA,
 	TUBERCULOS,
 	FRUTA,
