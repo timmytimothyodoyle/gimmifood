@@ -5,50 +5,14 @@
 		</div>
 		
 	<div class="input-field col s12">
-		<input id="search-input" type="text" class="autocomplete"> <label
-			for="search">Search ingredients you have</label>
+		<input id="autocomplete-input" type="text" class="autocomplete"> <label
+			for="autocomplete-input">Search ingredients you have</label>
 			<i class="material-icons prefix" id="search-btn">search</i>
 	</div>
 
 	<!-- container de los ingredientes seleccionados -->
 	<div class="col s6" id="selected-ingredients">
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
 	
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Agua <i class="close material-icons">close</i>
-		</div>
-		<div class="chip">
-			Pan <i class="close material-icons">close</i>
-		</div>
 	</div>
 
 <!-- container del boton de calculo de recetas -->

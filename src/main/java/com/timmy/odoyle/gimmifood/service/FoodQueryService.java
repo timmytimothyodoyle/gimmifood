@@ -8,5 +8,5 @@ public interface FoodQueryService {
 	
 	Food get(String name);
 
-	List<Food> predict(String... args);
+	List<Food> predict(String name);
 }

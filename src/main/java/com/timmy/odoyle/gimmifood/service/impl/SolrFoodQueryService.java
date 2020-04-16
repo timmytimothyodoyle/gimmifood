@@ -14,7 +14,7 @@ public class SolrFoodQueryService implements FoodQueryService {
 	}
 
 	@Override
-	public List<Food> predict(String... args) {
+	public List<Food> predict(String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -8,6 +8,6 @@ public class HttpRequestFoodQueryAdapter {
 
 	public FoodQuery adapt(HttpServletRequest request) {
 		
-		return new FoodQuery(request.getParameter("term"), FoodQuery.QueryType.EXACT);
+		return new FoodQuery(request.getParameter("term"));
 	}
 }

@@ -54,10 +54,7 @@ public class FoodQueryServlet extends HttpServlet {
 		}
 		// query food/s by term
 		List<Food> foodList;
-		if (query.getType().equals(QueryType.EXACT))
-			foodList = Arrays.asList(queryService.get(query.getTerm()));
-		else
-			foodList = queryService.predict(query.getTerm());
+		foodList = queryService.predict(query.getTerm());
 		// adapt the spots into a HTML JSON representation
 		String foodsJson = foodJsonAdapter.adapt(foodList);
 		// return as response
