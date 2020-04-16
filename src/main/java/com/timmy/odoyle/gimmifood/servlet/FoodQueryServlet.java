@@ -42,6 +42,13 @@ public class FoodQueryServlet extends HttpServlet {
 		// check if query is valid
 		if (query == null) {
 			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+			response.getWriter().write("unable to get query term");
+			// LOG ERROR
+			return;
+		}
+		if(!query.isValid()) {
+			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+			response.getWriter().write("term is invalid only apha characters are allowed");
 			// LOG ERROR
 			return;
 		}

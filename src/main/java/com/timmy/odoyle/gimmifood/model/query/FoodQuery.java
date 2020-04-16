@@ -20,4 +20,9 @@ public class FoodQuery {
 	public QueryType getType() {
 		return type;
 	}
+	
+	public boolean isValid() {
+		// TODO CHEQUEAR QUE EL TERM NO TENGA NUMEROS NI CARACTERES RAROS
+		return true;
+	}
 }

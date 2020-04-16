@@ -9,6 +9,8 @@ public class FoodJsonAdapter implements ItemAdapter<Food> {
 
 	@Override
 	public String adapt(Food item) {
+		// TODO NO HACE FALTA CONTRUIRLO SIEMPRE, CREALO COMO VARIABLE Y SE INICIALIZA
+		// EN EL CONSTRUCTOR
 		Gson gson = new Gson();
 		return gson.toJson(item);
 	}

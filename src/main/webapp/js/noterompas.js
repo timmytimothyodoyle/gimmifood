@@ -9,7 +9,7 @@ let name = document.querySelector("#autocomplete-input").value;
     "thing": {
       "nombre": name
     }
-
+// TODO TIRA ESTO, A VOS TE ANDA? Uncaught SyntaxError: Unexpected token 'function'
 function load2(){
 fetch("/food",{
    method: 'POST', 
