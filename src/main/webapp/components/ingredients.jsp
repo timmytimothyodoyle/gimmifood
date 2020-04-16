@@ -7,7 +7,7 @@
 	<div class="input-field col s12">
 		<input id="autocomplete-input" type="text" class="autocomplete"> <label
 			for="search">Search ingredients you have</label>
-			<i class="material-icons prefix" id="js_search">search</i>
+			<i class="material-icons prefix" id="jss_search">search</i>
 	</div>
 
 	<!-- container de los ingredientes seleccionados -->
@@ -54,6 +54,6 @@
 <!-- container del boton de calculo de recetas -->
 
 <div class="col s6 center">
-<a class="waves-effect waves-light btn-large"><i class="material-icons left">search</i>Buscar</a>
+<a class="waves-effect waves-light btn-large" id="js-search"><i class="material-icons left">search</i>Buscar receta</a>
 </div>
 </div>

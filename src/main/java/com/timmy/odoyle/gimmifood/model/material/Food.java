@@ -21,6 +21,11 @@ public class Food extends AbstractItem {
 	
 	// nutritional value per 100 g
 	private Map<String, Unit> nutritionalMap;
+	
+	public Food(String id, String name, Category category) {
+		super(id, name);
+		this.category = category;
+	}
 
 	public String getImage() {
 		return image;

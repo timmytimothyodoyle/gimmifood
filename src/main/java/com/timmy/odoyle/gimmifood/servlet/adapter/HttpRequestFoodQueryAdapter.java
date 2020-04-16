@@ -7,6 +7,6 @@ import com.timmy.odoyle.gimmifood.model.query.FoodQuery;
 public class HttpRequestFoodQueryAdapter {
 
 	public FoodQuery adapt(HttpServletRequest request) {
-		return null;
+		return new FoodQuery(request.getParameter("foodName"), FoodQuery.QueryType.EXACT);
 	}
 }

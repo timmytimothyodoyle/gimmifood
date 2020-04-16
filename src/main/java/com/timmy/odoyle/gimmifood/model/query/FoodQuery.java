@@ -8,6 +8,11 @@ public class FoodQuery {
 	
 	private QueryType type;
 	
+	public FoodQuery(String term, QueryType type) {
+		this.term = term;
+		this.type = type;
+	}
+	
 	public String getTerm() {
 		return term;
 	}
