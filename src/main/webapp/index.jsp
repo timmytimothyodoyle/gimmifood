@@ -11,7 +11,7 @@
 		<div class="container">
 		<jsp:include page="/components/ingredients.jsp" />
 
-		<jsp:include page="/components/receipts.jsp" />
+		<jsp:include page="/components/recipes.jsp" />
 		</div>
 	</div>
 </body>

@@ -8,9 +8,10 @@ import com.timmy.odoyle.gimmifood.service.FoodQueryService;
 
 public class MockFoodQueryService implements FoodQueryService {
 	Food papa = new Food("1", "Papa", Category.TUBERCULOS);
+
 	@Override
 	public Food get(String name) {
-		if(papa.getName().equals(name)) 
+		if (papa.getName().equalsIgnoreCase(name.toLowerCase()))
 			return papa;
 		else
 			return null;

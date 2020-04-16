@@ -5,9 +5,9 @@
 		</div>
 		
 	<div class="input-field col s12">
-		<input id="autocomplete-input" type="text" class="autocomplete"> <label
+		<input id="search-input" type="text" class="autocomplete"> <label
 			for="search">Search ingredients you have</label>
-			<i class="material-icons prefix" id="jss_search">search</i>
+			<i class="material-icons prefix" id="search-btn">search</i>
 	</div>
 
 	<!-- container de los ingredientes seleccionados -->
