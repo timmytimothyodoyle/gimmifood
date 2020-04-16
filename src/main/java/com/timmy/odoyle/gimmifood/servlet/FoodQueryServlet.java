@@ -13,7 +13,6 @@ import com.timmy.odoyle.gimmifood.model.adapter.FoodJsonAdapter;
 import com.timmy.odoyle.gimmifood.model.adapter.ItemAdapter;
 import com.timmy.odoyle.gimmifood.model.material.Food;
 import com.timmy.odoyle.gimmifood.model.query.FoodQuery;
-import com.timmy.odoyle.gimmifood.model.query.FoodQuery.QueryType;
 import com.timmy.odoyle.gimmifood.service.FoodQueryService;
 import com.timmy.odoyle.gimmifood.service.impl.MockFoodQueryService;
 import com.timmy.odoyle.gimmifood.servlet.adapter.HttpRequestFoodQueryAdapter;

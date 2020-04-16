@@ -34,7 +34,7 @@ function success(data) {
 	console.log(JSON.stringify(JSON.parse(data)[0].name));
 	for(let i=0; i<foods.length; i++){
 	if(!ingrediente.includes(JSON.stringify(foods[i].name))){
-		ingrediente.push(JSON.stringify(foods[i].name));
+		ingrediente.push(foods[i].name);
 	 $('#selected-ingredients').append("<div class='chip' id='"+"ingredient"+foods[i].id+"'>"+foods[i].name+" <i class='close material-icons'>close</i></div>");
 	}
 		}
@@ -48,7 +48,18 @@ function error(data) {
 };
 
 
+// Le mando nombres o  objetos food?
+$('#search-recipe').click(function(event) {
+console.log(ingrediente);
+	$.post('/recipe', {
+		term : ingrediente
+	}).done(function(data) {
+		succesRecipe(data);
+	}).fail(function(data) {
+		error(data);
+	});
+});
 
-
- //	$('#selected-ingredients').append("<div class='chip'>"+foods[i].name+" <i class='close material-icons'>close</i></div>");
- 
+function succesRecipe(data){
+console.log("biiiiiiiieeeeeen");
+}

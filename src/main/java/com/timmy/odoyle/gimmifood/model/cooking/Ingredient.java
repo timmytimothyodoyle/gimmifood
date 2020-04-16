@@ -10,4 +10,12 @@ public class Ingredient {
 	private Unit unit;
 	
 	private Double amount;
+	
+	public Ingredient(Food raw) {
+		this.raw = raw;
+	}
+	
+	public Food getRaw() {
+		return this.raw;
+	}
 }

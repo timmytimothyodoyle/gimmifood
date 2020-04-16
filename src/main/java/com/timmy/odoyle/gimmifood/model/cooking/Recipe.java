@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.timmy.odoyle.gimmifood.model.AbstractItem;
 import com.timmy.odoyle.gimmifood.model.Difficulty;
+import com.timmy.odoyle.gimmifood.model.material.Food;
 import com.timmy.odoyle.gimmifood.model.material.Utensil;
 
 public class Recipe extends AbstractItem {
@@ -36,5 +37,13 @@ public class Recipe extends AbstractItem {
 	
 	public void addInstructions(Instruction i) {
 		this.instructions.add(i);
+	}
+	
+	public boolean containsFood(Food f) {
+		for(Ingredient i : ingredients) {
+			if(i.getRaw().equals(f))
+				return true;
+		}
+		return false;
 	}
 }

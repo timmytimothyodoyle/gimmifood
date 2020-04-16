@@ -18,6 +18,6 @@
 <!-- container del boton de calculo de recetas -->
 
 <div class="col s6 center">
-<a class="waves-effect waves-light btn-large" id="js-search"><i class="material-icons left">search</i>Buscar receta</a>
+<a class="waves-effect waves-light btn-large" id="search-recipe"><i class="material-icons left">search</i>Buscar receta</a>
 </div>
 </div>
