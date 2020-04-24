@@ -8,6 +8,6 @@ public class HttpRequestRecipeQueryAdapter {
 
 	public RecipeQuery adapt(HttpServletRequest request) {
 		// Deberias volver food o strings?
-		return new RecipeQuery(request.getParameter("term"));
+		return new RecipeQuery(request.getParameterValues("term[]"));
 	}
 }

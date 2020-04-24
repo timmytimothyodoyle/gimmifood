@@ -41,11 +41,15 @@ public class Recipe extends AbstractItem {
 		this.instructions.add(i);
 	}
 	
-	public boolean containsFood(Food f) {
+	public boolean containsFood(String f) {
 		for(Ingredient i : ingredients) {
-			if(i.getRaw().equals(f))
+			if(i.getRaw().getName().equals(f))
 				return true;
 		}
 		return false;
+	}
+	
+	public int getCantidadIngredients(){
+		return this.ingredients.size();
 	}
 }

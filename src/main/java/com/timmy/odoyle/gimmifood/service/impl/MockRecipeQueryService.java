@@ -11,7 +11,7 @@ import com.timmy.odoyle.gimmifood.model.material.Food;
 import com.timmy.odoyle.gimmifood.service.RecipeQueryService;
 
 public class MockRecipeQueryService implements RecipeQueryService {
-	List<Recipe> recipes;
+	ArrayList<Recipe> recipes;
 
 	public MockRecipeQueryService() {
 		Food papa = new Food("1", "Papa", Category.TUBERCULOS);
@@ -36,15 +36,19 @@ public class MockRecipeQueryService implements RecipeQueryService {
 	}
 
 	@Override
-	public List<Recipe> get(List<Food> foods) {
-
-		List<Recipe> result = this.recipes;
-		for (Food food : foods) {
-			for (Recipe recipe : result) {
-				if (!recipe.containsFood(food))
-					result.remove(recipe);
+	public List<Recipe> get(String[] foods) {
+		ArrayList<Recipe> result = new ArrayList<Recipe>();
+		int poseeIngredientes;
+		for (Recipe recipe : recipes) {
+			poseeIngredientes = 0;
+			for (int i = 0; i < foods.length; i++) {
+				if (recipe.containsFood(foods[i]))
+					poseeIngredientes++;
 			}
+			if (poseeIngredientes > recipe.getCantidadIngredients() / 2)
+				result.add(recipe);
 		}
+
 		return result;
 	}
 }

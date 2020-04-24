@@ -7,5 +7,5 @@ import com.timmy.odoyle.gimmifood.model.material.Food;
 
 public interface RecipeQueryService {
 
-	List<Recipe> get(List<Food> items);
+	List<Recipe> get(String[] foods);
 }

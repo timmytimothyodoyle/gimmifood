@@ -19,6 +19,9 @@ $(document).ready(function() {
 				term : $('#autocomplete-input').val()
 			}).done(function(data) {
 				success(data);
+				/*$('.close').each(function() {
+					  $( this ).click(deleteIngredient());
+					});*/
 			}).fail(function(data) {
 				error(data);
 			});
@@ -34,17 +37,22 @@ function success(data) {
 	for (let i = 0; i < foods.length; i++) {
 		if (!ingrediente.includes(foods[i].name)) {
 			ingrediente.push(foods[i].name);
-			$('#selected-ingredients').append(
-					"<div class='chip' id='" + "ingredient" + foods[i].id
-							+ "'>" + foods[i].name
-							+ " <i class='close material-icons' id='"
-							+ foods[i].id
-							+ "' name='deleteFood' >close</i></div>");
-
+			$('#selected-ingredients')
+					.append(
+							"<div class='chip' id='"
+									+ "ingredient"
+									+ foods[i].id
+									+ "'>"
+									+ foods[i].name
+									+ " <i class='close material-icons'  >close</i></div>");
+			
 		}
 	}
 
 };
+function deleteIngredient(){
+	console.log("llego a borrar ingrediente");
+}
 
 function error(data) {
 	console.log("culo");
@@ -65,4 +73,5 @@ $('#search-recipe').click(function(event) {
 
 function succesRecipe(data) {
 	console.log("biiiiiiiieeeeeen");
+	console.log(data);
 }
