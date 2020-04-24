@@ -9,9 +9,21 @@
 		<servlet-name>FoodQueryServlet</servlet-name>
 		<servlet-class>com.timmy.odoyle.gimmifood.servlet.FoodQueryServlet</servlet-class>
 	</servlet>
+	
+	<servlet>
+		<servlet-name>RecipeQueryServlet</servlet-name>
+		<servlet-class>com.timmy.odoyle.gimmifood.servlet.RecipeQueryServlet</servlet-class>
+	</servlet>
 	<!-- servlet mapping declarations -->
 	<servlet-mapping>
 		<servlet-name>FoodQueryServlet</servlet-name>
 		<url-pattern>/food</url-pattern>
 	</servlet-mapping>
+	
+		<servlet-mapping>
+		<servlet-name>RecipeQueryServlet</servlet-name>
+		<url-pattern>/recipe</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
+

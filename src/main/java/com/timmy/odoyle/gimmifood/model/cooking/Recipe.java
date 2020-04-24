@@ -1,5 +1,6 @@
 package com.timmy.odoyle.gimmifood.model.cooking;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.timmy.odoyle.gimmifood.model.AbstractItem;
@@ -25,6 +26,7 @@ public class Recipe extends AbstractItem {
 		super(id,name);
 		this.difficulty = difficulty;
 		this.description = description;
+		this.ingredients = new ArrayList<Ingredient>();
 	}
 	
 	public void addUtensil(Utensil u) {

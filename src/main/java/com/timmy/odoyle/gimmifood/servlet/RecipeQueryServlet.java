@@ -56,6 +56,7 @@ public class RecipeQueryServlet extends HttpServlet {
 		// query food/s by term
 		List<Recipe> recipeList;
 		/*
+		// El getTerm() deberia devolver List<Food> ??? 
 		recipeList = queryService.get(query.getTerm());
 		// adapt the spots into a HTML JSON representation
 		String foodsJson = foodJsonAdapter.adapt(foodList);
