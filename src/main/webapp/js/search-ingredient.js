@@ -49,7 +49,7 @@ function success(data) {
 
 		}
 	}
-
+document.querySelector("#autocomplete-input").value = "";
 };
 function deleteIngredient() {
 	console.log("llego a borrar ingrediente");
