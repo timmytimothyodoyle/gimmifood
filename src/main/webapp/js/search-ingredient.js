@@ -86,6 +86,13 @@ function succesRecipe(data) {
 								+ recipes[i].name
 								+ "</span> <p>"
 								+ recipes[i].description
-								+ "</p></div> </div> </div>");
+								+ "</p><ul class='collection' id='ingredients"
+								+ recipes[i].id + "'></ul></div> </div> </div>");
+		for (let e = 0; e < recipes[i].ingredients.length; e++) {
+			$('#ingredients' + recipes[i].id).append(
+					"<li class='collection-item'>"
+							+ recipes[i].ingredients[e].raw.name + "</li>")
+		}
 	}
+
 }
