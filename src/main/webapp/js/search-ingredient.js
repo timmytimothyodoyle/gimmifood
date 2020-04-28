@@ -19,9 +19,10 @@ $(document).ready(function() {
 				term : $('#autocomplete-input').val()
 			}).done(function(data) {
 				success(data);
-				/*$('.close').each(function() {
-					  $( this ).click(deleteIngredient());
-					});*/
+				/*
+				 * $('.close').each(function() { $( this
+				 * ).click(deleteIngredient()); });
+				 */
 			}).fail(function(data) {
 				error(data);
 			});
@@ -45,12 +46,12 @@ function success(data) {
 									+ "'>"
 									+ foods[i].name
 									+ " <i class='close material-icons'  >close</i></div>");
-			
+
 		}
 	}
 
 };
-function deleteIngredient(){
+function deleteIngredient() {
 	console.log("llego a borrar ingrediente");
 }
 
@@ -72,6 +73,19 @@ $('#search-recipe').click(function(event) {
 });
 
 function succesRecipe(data) {
-	console.log("biiiiiiiieeeeeen");
+	let recipes = JSON.parse(data);
 	console.log(data);
+	console.log(JSON.stringify(JSON.parse(data)[0].name))
+	$('#recipes').html("");
+	for (let i = 0; i < recipes.length; i++) {
+		$('#recipes')
+				.append(
+						"<div class='col s12 m6'> <div class='card'><div class='card-image'><img src='images/"
+								+ recipes[i].id
+								+ ".jpg'> <a class='btn-floating halfway-fab waves-effect waves-light red'><i class='material-icons'>add</i></a> </div><div class='card-content'><span class='card-title'>"
+								+ recipes[i].name
+								+ "</span> <p>"
+								+ recipes[i].description
+								+ "</p></div> </div> </div>");
+	}
 }
