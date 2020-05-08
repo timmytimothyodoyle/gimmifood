@@ -1,7 +1,7 @@
 package com.timmy.odoyle.gimmifood.model;
 
 public enum Category {
-	VERDURA,
+	VEGETAL,
 	TUBERCULOS,
 	FRUTA,
 	CARNE,
@@ -10,6 +10,7 @@ public enum Category {
 	LACTEO,
 	LEGUMBRE,
 	CEREAL,
+	CONDIMENTOS,
 	DULCE,
 	ACEITE,
 	FRUTOS_SECOS,

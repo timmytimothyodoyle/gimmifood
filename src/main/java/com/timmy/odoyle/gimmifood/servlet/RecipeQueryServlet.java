@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.timmy.odoyle.gimmifood.model.adapter.ItemAdapter;
 import com.timmy.odoyle.gimmifood.model.adapter.RecipeJsonAdapter;
 import com.timmy.odoyle.gimmifood.model.cooking.Recipe;
-import com.timmy.odoyle.gimmifood.model.material.Food;
 import com.timmy.odoyle.gimmifood.model.query.RecipeQuery;
 import com.timmy.odoyle.gimmifood.service.RecipeQueryService;
 import com.timmy.odoyle.gimmifood.service.impl.MockRecipeQueryService;

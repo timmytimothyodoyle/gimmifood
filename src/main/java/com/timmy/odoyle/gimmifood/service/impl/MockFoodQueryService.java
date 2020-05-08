@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.timmy.odoyle.gimmifood.model.Category;
-import com.timmy.odoyle.gimmifood.model.cooking.Ingredient;
 import com.timmy.odoyle.gimmifood.model.material.Food;
 import com.timmy.odoyle.gimmifood.service.FoodQueryService;
 
@@ -13,22 +12,24 @@ public class MockFoodQueryService implements FoodQueryService {
 
 	public MockFoodQueryService() {
 		foods = new ArrayList<Food>();
-		Food papa = new Food("1", "Papa", Category.TUBERCULOS);
-		Food patata = new Food("2", "Patata", Category.TUBERCULOS);
-		Food queso = new Food("2", "Queso", Category.LACTEO);
-		Food arroz = new Food("3", "Arroz", Category.CEREAL);
-		Food carne_picada = new Food("4", "Carne picada", Category.CARNE);
-		foods.add(papa);
-		foods.add(patata);
-		foods.add(queso);
-		foods.add(arroz);
-		foods.add(carne_picada);
+		foods.add(new Food("1", "Papa", Category.TUBERCULOS));
+		foods.add(new Food("2", "Papaya", Category.FRUTA));
+		foods.add(new Food("3", "Pomelo", Category.FRUTA));
+		foods.add(new Food("4", "Paprika", Category.CONDIMENTOS));
+		foods.add(new Food("5", "Pollo", Category.CARNE));
+		foods.add(new Food("6", "Queso", Category.LACTEO));
+		foods.add(new Food("7", "Arroz", Category.CEREAL));
+		foods.add(new Food("8", "Carne picada", Category.CARNE));
+		foods.add(new Food("9", "Morron", Category.VEGETAL));
+		foods.add(new Food("10", "Cebolla", Category.VEGETAL));
+		foods.add(new Food("11", "Moztaza", Category.CONDIMENTOS));
+		foods.add(new Food("12", "Morcilla", Category.CARNE));
 	}
 
 	@Override
 	public Food get(String name) {
 		for (Food food : foods) {
-			if (food.getName().equalsIgnoreCase(name.toLowerCase()))
+			if (food.getName().toLowerCase().equalsIgnoreCase(name.toLowerCase()))
 				return food;
 		}
 		return null;

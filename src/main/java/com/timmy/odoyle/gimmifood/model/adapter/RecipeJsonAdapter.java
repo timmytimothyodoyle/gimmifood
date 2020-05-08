@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.google.gson.Gson;
 import com.timmy.odoyle.gimmifood.model.cooking.Recipe;
-import com.timmy.odoyle.gimmifood.model.material.Food;
 
 public class RecipeJsonAdapter implements ItemAdapter<Recipe> {
 	

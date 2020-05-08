@@ -1,0 +1,9 @@
+.search-container {
+	margin-top: 20px;
+}
+
+.query-container {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	border-bottom: 0px;
+}
