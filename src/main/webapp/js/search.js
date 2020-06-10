@@ -1,6 +1,7 @@
 const EMPTY = '';
 
 var _autocompleteData;
+var _recipesData;
 
 function get_autocomplete_options() {
 	var options = {};
@@ -19,7 +20,27 @@ function select_ingredient(name) {
 };
 
 function success_recipe(data) {
+	console.log("LLEGO A SUCCES");
 	clear_recipes();
+	_recipesData = JSON.parse(data);
+	for (let i = 0; i < _recipesData.length; i++){
+		$('.recipes-container')
+				.append(
+						"<div class='col s12 m6'> <div class='card'><div class='card-image'><img src='images/"
+								+ _recipesData[i].id
+								+ ".jpg'> <a class='btn-floating halfway-fab waves-effect waves-light red'><i class='material-icons'>add</i></a> </div><div class='card-content'><span class='card-title'>"
+								+ _recipesData[i].name
+								+ "</span> <p>"
+								+ _recipesData[i].description
+								+ "</p><ul class='collection' id='ingredients"
+								+ _recipesData[i].id + "'></ul></div> </div> </div>");
+		for (let e = 0; e < _recipesData[i].ingredients.length; e++) {
+			$('#ingredients' + _recipesData[i].id).append(
+					"<li class='collection-item'>"
+							+ _recipesData[i].ingredients[e].raw.name + "</li>")
+		}
+	}
+	
 };
 
 function success_ingredient(data, field) {
@@ -57,8 +78,10 @@ $('.autocomplete').each(function() {
 });
 
 $('.search-recipes').click(function(event) {
+let ingredients = get_ingredients();
+console.log("ESTOOOO" + ingredients);
 	$.post('/recipe', {
-		term : get_ingredients()
+		term : ingredients,
 	}).done(function(data) {
 		success_recipe(data);
 	}).fail(function(data) {
